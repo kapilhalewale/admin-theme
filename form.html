@@ -1,0 +1,83 @@
+<style>
+.myInput
+	{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+.myInput:focus{border-bottom:2px solid orange}
+
+span {
+	position: absolute;
+    left: 50%;
+	content: '';
+	height: 40px;
+	height: 5px;
+    background: #f00;
+    transition: all 0.5s linear;
+    width: 0;
+    bottom: -5px;  
+}
+
+input:hover ~ span {
+	width: 200px;
+    margin-left: -105px;
+}
+</style>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMen.css" rel="stylesheet">
+
+
+			<div class="row" style="min-height:540px;">
+				<div class="col-lg-6">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-user"></i>  <label> Form</label></h3>
+						</div>
+						<div class="panel-body">
+							<form action="Save.jsp" method="post" class="myForm" data-parsley-validate="">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label>First Name<span id="req">*</span></label>
+									<input class="myInput" required placeholder="First Name">
+									<span></span>
+								</div>
+							</div>	
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label>Skills</label>
+									<select class="myInput">
+										<option></option>
+										<option selected>Java</option>
+										<option>MySql</option>
+										<option>oracle</option>
+										<option selected>Spring</option>
+										<option>Struts2</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label>Occupation</label>
+									<input class="myInput" placeholder="Occupation">
+								</div>
+								<div class="form-group">
+									<label>City<span id="req">*</span></label>
+									<select class="myInput" required="">
+										<option>Please Select</option>
+										<option value="1">Bidar</option>
+									</select>
+								</div>
+							</div>	
+							<div class="col-lg-12">
+								<button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Submit</button>
+								<button type="reset" class="btn btn-warning btn-sm"><i class="fa fa-refresh"></i> Reset</button>
+							</div>	
+						</form>
+						</div>
+					</div>
+
+				</div>
+			</div>

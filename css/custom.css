@@ -1,0 +1,12 @@
+.myBut
+{
+	float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#req
+{
+	color:red;
+font-weight: bolder;
+}

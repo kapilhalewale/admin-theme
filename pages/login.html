@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login Page</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/parsley.css" rel="stylesheet">
+    <link href="../css/build.css" rel="stylesheet">
+
+	
+    <link href="../other/css/dataTables.bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+		body
+		{
+			background-color: #7f7878;
+		}
+	</style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+            <!-- /.row -->
+			<div class="col-xs-4" style="MARGIN-TOP: 10%;margin-left: 34%">
+			<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"><i class="fa fa-cogs"></i>  <label> Authentication</label></h3>
+					</div>
+					<div class="panel-body">
+					<div class="alert alert-danger alert-dismissable fade in bs-callout bs-callout-warning hidden">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						<strong>Authentication failed!</strong> invalid credential
+					</div>
+<!--
+					<div class="bs-callout bs-callout-info hidden">
+					  <h4>Yay!</h4>
+					  <p>Everything seems to be ok :)</p>
+					</div>
+-->
+						<div class="col-lg-12 "> 
+						<form action="validate" method="post" id="form" data-parsley-validate="">
+						  <table style="margin-left:50px;margin-top:10px;">
+							<tbody>
+							  <tr>
+								<td>
+								<div class="form-group input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i> </span>
+									<input type="text" class="form-control" placeholder="Username" required="">
+								</div>
+
+								</td>
+							  </tr>
+							  <tr>
+								<td>	
+									<div class="form-group input-group">
+										<span class="input-group-addon"><i class="fa fa-key"></i> </span>
+										<input type="text" class="form-control" placeholder="Password" required="">
+									</div>								
+								</td>
+							  </tr>
+							  <tr>
+								<td class="pull-right">
+									<div class="checkbox checkbox-success checkbox-inline">
+										<input type="checkbox" class="styled" id="inlineCheckbox2" value="English" checked>
+										<label for="inlineCheckbox2"> Remember me </label>
+									</div>
+								</td>
+							  </tr>
+							 <tr>
+								<td>
+									<div class="form-group">
+										<button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-sign-in"></i> Login </button>
+										 <p class="pull-right" style=" margin-top: 17px;font-size: 11px;">New Account? <a href="register.html">Register</a></p>
+									</div>
+								</td>
+							 </tr>
+							</tbody>
+						  </table>
+						  </form>
+						</div>
+					  </div>
+					</div>
+			  </div>
+			</div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>    
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/parsley.js"></script>
+
+	<script type="text/javascript">
+	$(function () {
+	  $('#form').parsley().on('field:validated', function() {
+		var ok = $('.parsley-error').length === 0;
+		$('.bs-callout-info').toggleClass('hidden', !ok);
+		$('.bs-callout-warning').toggleClass('hidden', ok);
+	  })
+	  .on('form:submit', function() {
+		return true; // Don't submit form for this demo
+	  });
+	});
+	</script>	
+
+</body>
+
+</html>

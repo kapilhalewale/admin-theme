@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kapspace Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/build.css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker3.css" rel="stylesheet">
+    <link href="../css/chosen.css" rel="stylesheet">
+    <link href="../css/parsley.css" rel="stylesheet">
+    <link href="../css/scroll.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMen.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/admin.css" rel="stylesheet">
+	
+    <link href="../other/css/dataTables.bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+.myInput
+	{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+.myInput:focus{border-bottom:2px solid orange}
+</style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0; background-color: #d9edf7;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="#" style="width:221px;    background-color: #dcd5d5;color: #0d81a7;" ><i class="fa fa-windows fa-lg" ></i> Kapspace</a>
+            </div>
+            <!-- /.navbar-header -->
+			<ul class="nav navbar-nav"  style="width:220px;margin-top: 8px;margin-left:10px;">
+			                       <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+					</ul>
+            <ul class="nav navbar-top-links navbar-right">
+             
+                <!-- /.dropdown -->
+                
+                
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> H Kapil Kumar <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+ 
+                        <li>
+                            <a href="../index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="table.html"><i class="fa fa-users fa-fw"></i> Users</a>
+                        </li>
+                        <li>
+                            <a href="form.html"><i class="fa fa-edit fa-fw"></i> Form</a>
+                        </li>
+ 						<li>
+                            <a href="#"><i class="fa fa-cogs fa-fw"></i> Other Pages <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="profile.html"><i class="fa fa-cog"></i> User Profile</a>
+                                </li>
+                                <li>
+                                    <a href="login.html"><i class="fa fa-cog"></i> Login Page</a>
+                                </li>
+                                <li>
+                                    <a href="register.html"><i class="fa fa-cog"></i> Signup page</a>
+                                </li>
+                            </ul>
+                        </li>   
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+ 		
+			<div class="row" style="margin-top: 50px;">
+                <div class="col-lg-12">
+					<h1 class="page-header" style="margin:0px;">
+						<small><i class="fa fa-edit"></i> Form</small>
+					</h1>
+					<div class="myBut">
+						<button class="btn btn-xs btn-warning"><i class="fa fa-angle-left fa-lg"></i> Back</button>
+					</div>
+					
+
+				</div>
+			</div>
+            <!-- /.row -->
+            <div class="row">
+				<div class="col-lg-12">
+				
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-user"></i>  <label> User Registration</label></h3>
+						</div>
+						<div class="panel-body">
+							<form action="Save.jsp" method="post" class="myForm" data-parsley-validate="">
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label>First Name<span id="req">*</span></label>
+									<input class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label>Middle Name</label>
+									<input class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Last Name</label>
+									<input class="form-control">
+								</div>
+							</div>	
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label>Last Name</label>
+									<input class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Date Of Birth<span id="req">*</span></label>
+									<input type="text" class="form-control date" placeholder="dd/mm/yyyy" required>
+								</div>
+								<div class="form-group">
+									<label>Skills</label>
+									<select class="form-control chosen" multiple>
+										<option></option>
+										<option selected>Java</option>
+										<option>MySql</option>
+										<option>oracle</option>
+										<option selected>Spring</option>
+										<option>Struts2</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group" style="padding-bottom: 12px;">
+                                <label>Known Langauges</label><br>
+								<div class="checkbox checkbox-success checkbox-inline">
+									<input type="checkbox" class="styled" id="inlineCheckbox2" value="English" data-parsley-mincheck="2">
+									<label for="inlineCheckbox2"> English </label>
+								</div>
+								<div class="checkbox checkbox-success checkbox-inline">
+									<input type="checkbox" class="styled" id="inlineCheckbox2" value="Hindi" checked="">
+									<label for="inlineCheckbox2"> Hindi </label>
+								</div>
+								<div class="checkbox checkbox-success checkbox-inline">
+									<input type="checkbox" class="styled" id="inlineCheckbox2" value="Kannada">
+									<label for="inlineCheckbox2"> Kannada </label>
+								</div>
+                            </div>
+								<div class="form-group">
+									<label>Text Input</label>
+									<input class="form-control">
+								</div>
+								<div class="form-group">
+									<label>City<span id="req">*</span></label>
+									<select class="form-control chosen" required="" min="1">
+										<option>Please Select</option>
+										<option value="1">Bidar</option>
+									</select>
+								</div>
+							</div>	
+							<div class="col-lg-12">
+								<button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Submit</button>
+								<button type="reset" class="btn btn-warning btn-sm"><i class="fa fa-refresh"></i> Reset</button>
+							</div>	
+						</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-user"></i>  <label> Form 2</label></h3>
+						</div>
+						<div class="panel-body">
+							<form action="Save.jsp" method="post" class="myForm" data-parsley-validate="">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label>First Name<span id="req">*</span></label>
+									<input class="myInput" required placeholder="First Name">
+								</div>
+							</div>	
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label>Skills</label>
+									<select class="myInput">
+										<option></option>
+										<option selected>Java</option>
+										<option>MySql</option>
+										<option>oracle</option>
+										<option selected>Spring</option>
+										<option>Struts2</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label>Occupation</label>
+									<input class="myInput" placeholder="Occupation">
+								</div>
+								<div class="form-group">
+									<label>City<span id="req">*</span></label>
+									<select class="myInput" required="">
+										<option>Please Select</option>
+										<option value="1">Bidar</option>
+									</select>
+								</div>
+							</div>	
+							<div class="col-lg-12">
+								<button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Submit</button>
+								<button type="reset" class="btn btn-warning btn-sm"><i class="fa fa-refresh"></i> Reset</button>
+							</div>	
+						</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+            <!-- /.row -->
+            
+            <!-- /.row -->
+			
+			
+        </div>
+        <!-- /#page-wrapper -->
+
+		
+		
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../js/metisMenu.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/admin.js"></script>
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/chosen.jquery.js"></script>
+    <script src="../js/parsley.js"></script>
+	
+    <script src="../other/js/jquery.dataTables.min.js"></script>
+    <script src="../other/js/dataTables.bootstrap.min.js"></script>
+
+	<script>
+	$(document).ready(function()
+	{
+		$('#dataTable').DataTable();
+		
+		$('.date').datepicker({
+			format : 'dd/mm/yyyy'
+		});
+		
+		$(".chosen").chosen();
+		$(".myForm").parsley();
+
+		
+	});
+</script>
+</body>
+
+</html>

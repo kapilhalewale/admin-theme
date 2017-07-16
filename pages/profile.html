@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Profile Page</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/build.css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker3.css" rel="stylesheet">
+    <link href="../css/chosen.css" rel="stylesheet">
+    <link href="../css/parsley.css" rel="stylesheet">
+    <link href="../css/scroll.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMen.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/admin.css" rel="stylesheet">
+	
+    <link href="../other/css/dataTables.bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="../fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0; background-color: #d9edf7;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="#" style="width:221px;    background-color: #dcd5d5;color: #0d81a7;" ><i class="fa fa-windows fa-lg" ></i> Kapspace</a>
+            </div>
+            <!-- /.navbar-header -->
+			<ul class="nav navbar-nav"  style="width:220px;margin-top: 8px;margin-left:10px;">
+			                       <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+					</ul>
+            <ul class="nav navbar-top-links navbar-right">
+             
+                <!-- /.dropdown -->
+                
+                
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> H Kapil Kumar <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+ 
+                        <li>
+                            <a href="../index2.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="table.html"><i class="fa fa-users fa-fw"></i> Users</a>
+                        </li>
+                        <li>
+                            <a href="form.html"><i class="fa fa-edit fa-fw"></i> Form</a>
+                        </li>
+ 						<li>
+                            <a href="#"><i class="fa fa-cogs fa-fw"></i> Other Pages <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="profile.html"><i class="fa fa-cog"></i> User Profile</a>
+                                </li>
+                                <li>
+                                    <a href="login.html"><i class="fa fa-cog"></i> Login Page</a>
+                                </li>
+                                <li>
+                                    <a href="register.html"><i class="fa fa-cog"></i> Signup page</a>
+                                </li>
+                            </ul>
+                        </li>   
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+ 		
+			<div class="row" style="margin-top: 50px;">
+                <div class="col-lg-12">
+					<h1 class="page-header" style="margin:0px;">
+						<small><i class="fa fa-user"></i> H Kapil Kumar</small>
+					</h1>
+					<div class="myBut">
+						<button class="btn btn-xs btn-warning"><i class="fa fa-angle-left fa-lg"></i> Back</button>
+					</div>
+					
+
+				</div>
+			</div>
+            <!-- /.row -->
+            <div class="row" style="min-height:540px;">
+			<div class="col-xs-9" >
+			  <div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title"><i class="fa fa-edit"></i>  <label> Profile</label></h3>
+					</div>
+					<div class="panel-body">
+					  <div class="row">
+						<div class="col-md-3 col-lg-3 " align="center">
+							<img alt="User Pic" src="../img/user1.png" class="img-responsive"> 
+							<span class="label label-primary">Active</span>
+						</div>
+						
+						<div class=" col-md-9 col-lg-9 "> 
+						  <table class="table table-user-information">
+							<tbody>
+							  <tr>
+								<td>Name </td>
+								<td><input class="form-control input-sm" value="Kapil Kumar"></td>
+							  </tr>
+							  <tr>
+								<td>Designation:</td>
+								<td>									
+									<input class="form-control input-sm" value="Sr. Software Engineer">
+								</td>
+							  </tr>
+							  <tr>
+								<td>Date of Birth</td>
+								<td><input type="text" class="form-control input-sm date" value="27/02/1991" required></td>
+							  </tr>
+								 <tr>
+								   <td>Gender</td>
+								<td>
+									<select class="form-control input-sm chosen" required="" min="1">
+										<option>Please Select</option>
+										<option value="1" selected>Male</option>
+										<option value="2">Female</option>
+									</select>
+								</td>
+							  </tr>
+							  <tr>
+									<td>Known Langauges</td>
+									<td>
+											<div class="checkbox checkbox-success checkbox-inline">
+												<input type="checkbox" class="styled" id="inlineCheckbox2" value="English" data-parsley-mincheck="2" checked>
+												<label for="inlineCheckbox2"> English </label>
+											</div>
+											<div class="checkbox checkbox-success checkbox-inline">
+												<input type="checkbox" class="styled" id="inlineCheckbox2" value="Hindi" checked="">
+												<label for="inlineCheckbox2"> Hindi </label>
+											</div>
+									</td>
+							  </tr>
+							  <tr>
+								<td>Email</td>
+								<td><input class="form-control input-sm" value="kapilhalewale@gmail.com"></td>
+							  </tr>
+								<td>Phone Number</td>
+								<td><input class="form-control input-sm" value="+91-8147383148"></td>
+							  </tr>
+							</tbody>
+						  </table>
+						</div>
+					  </div>
+					</div>
+					<div class="panel-footer">
+						<a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+						<span class="pull-right">
+							<a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="fa fa-save"></i> Update</a>
+						</span>
+					</div>
+			  </div>
+			</div>
+				<div class="col-lg-3">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-book"></i>  <label> Skills</label></h3>
+						</div>
+						<div class="panel-body">
+							<select class="form-control chosen" multiple>
+								<option></option>
+								<option selected>Java</option>
+								<option selected>MySql</option>
+								<option>Oracle DB</option>
+								<option>HTML</option>
+								<option>CSS</option>
+								<option>Jquery</option>
+								<option>Angular JS</option>
+								<option selected>Spring</option>
+								<option selected>Struts2</option>
+								<option selected>Webservices</option>
+							</select><br><br>
+							<button class="btn btn-sm btn-primary pull-right" ><i class="fa fa-save"></i> Update</button>
+						</div>
+					</div>
+				</div>				
+			
+		</div>
+            <!-- /.row -->
+            
+            <!-- /.row -->
+			
+			
+        </div>
+        <!-- /#page-wrapper -->
+
+		
+		
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../js/metisMenu.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/admin.js"></script>
+    <script src="../js/bootstrap-datepicker.min.js"></script>
+    <script src="../js/chosen.jquery.js"></script>
+    <script src="../js/parsley.js"></script>
+	
+    <script src="../other/js/jquery.dataTables.min.js"></script>
+    <script src="../other/js/dataTables.bootstrap.min.js"></script>
+
+	<script>
+	$(document).ready(function()
+	{
+		$('#dataTable').DataTable();
+		
+		$('.date').datepicker({
+			format : 'dd/mm/yyyy'
+		});
+		
+		$(".chosen").chosen();
+		$(".myForm").parsley();
+
+		
+	});
+</script>
+</body>
+
+</html>
